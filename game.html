@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rock, Paper, Scissors</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -16,7 +16,7 @@
 
         <div id="enter-game-panel" class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-tittle">Would you like to</h3>
+                <h3 class="panel-title">Would you like to play?</h3>
             </div>
             <div class="panel-body">
                 <form id="player-form" class="form-group">
@@ -26,17 +26,18 @@
             </div>
         </div>
 
-        <div id="you are message" class="alert alert-success" role="alert">
+        <div id="you-are-message" class="alert alert-success" role="alert">
             Hi, <span id="p-name"></span>! You are Player <span id="p-num"></span><span id="game-message"></span>
         </div>
+
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-tittle">Play</h3>
+                <h3 class="panel-title">Play</h3>
             </div>
             <div class="panel-body">
                 <div class="game-section" id="p1-section">
                     <div id="p1-name" class="p-not-entered">Waiting for Player1</div>
-                    <div id="p1-choises"></div>
+                    <div id="p1-choices"></div>
                     <div id="p1-stats">Wins:<span id="p1 wins">0</span>| Losses: <span id="p1-losses">0</span></div>
                 </div>
                 <div class="game-section">
@@ -59,13 +60,17 @@
                 <div class="chat-container">
                     <ul id="message-view"></ul>
                     <form id="chat-input" class="form-group">
-                        <input id="chat-message" type="text" class="col-xs-10">
-                        <button id="send-button" class="bt btn-success col-xs-2" type="submit">Send</button>
+                        <input id="chat-message" class="col-xs-10" type="text">
+                        <button id="send-button" class="btn btn-success col-xs-2" type="submit">Send</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.js"
+        integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+    <script src="./game.js"></script>
 </body>
 
 </html>
