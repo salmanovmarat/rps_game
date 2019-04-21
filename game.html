@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel ="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center">Rock, Paper, Scissors</h1>
+
+        <div id="enter-game-panel" class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-tittle">Would you like to</h3>
+            </div>
+            <div class="panel-body">
+                <form id="player-form" class="form-group">
+                <input id="player-name" class="col-xs-10" type="text" placeholder="Name">
+                <button id="name-submit-button" class="btn btn-success col-xs-2" type="submit">Start</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="you are message" class="alert alert-success" role="alert">
+            Hi, <span id="p-name"></span>! You are Player <span id="p-num"></span><span id="game-message"></span>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
